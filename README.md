@@ -73,3 +73,5 @@ If the program closes because it encounters in a captcha you can try to login th
 - Open the extension and export all the cookies (fifth button starting from the left in the top bar of the extension that I used)
 - Paste the cookies into the file called cookies.json
 - Restart the script
+
+>To copy a cookie file in a swarm\compose, bind the local copy of `cookies.json` to: `/tmp/cookies.json`

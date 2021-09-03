@@ -37,7 +37,7 @@ def read_env_variables():
 def load_cookies(chrome_driver):
     logger.debug("trying to load cookies")
     try:
-        with open('cookies.json', 'r') as cookies_file:
+        with open('/tmp/cookies.json', 'r') as cookies_file:
             for i in json.load(cookies_file):
                 try:
                     chrome_driver.add_cookie(
