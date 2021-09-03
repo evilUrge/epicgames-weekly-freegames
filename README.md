@@ -1,4 +1,6 @@
 # Automatically get the epicgames store weekly free games
+> A fork of `ricosorio/epicgames-weekly-freegames` with ARM support!
+
 I like free games but I don't like repeating the same process over and over again when it can be automated... And that's why I made this!
 
 ## Important to read first
@@ -14,7 +16,7 @@ Personally I avoid hosting such processes on my machine so I don't have to worry
 #### Locally (Docker)
 To run it locally, pull the image from docker-hub:
 ```
-docker pull ricosorio/epicgames-weekly-freegames:latest
+docker pull docker pull evilurge/epicgames-weekly-freegames:latest
 ```
 And run a docker container from the newly downloaded image:
 ```
@@ -23,7 +25,7 @@ docker run -e EMAIL=<EMAIL> -e PASSWORD=<PASSWORD> ricosorio/epicgames-weekly-fr
 Replacing the environment variables `EMAIL` and `PASSWORD` for your epicgames store credentials.
 
 #### AWS Cloud (Fargate)
-To run the image AWS Fargate (ECS) start by creating a task definition that that pulls the image from `ricosorio/epicgames-weekly-freegames:latest`. Note that you don't need to specify the host (by default it pulls from docker-hub).
+To run the image AWS Fargate (ECS) start by creating a task definition that that pulls the image from `pull evilurge/epicgames-weekly-freegames:latest`. Note that you don't need to specify the host (by default it pulls from docker-hub).
 
 When it comes to how much resources the container needs, I find it enough to have 0.5GB and lowest version of CPU - 0.25.
 
