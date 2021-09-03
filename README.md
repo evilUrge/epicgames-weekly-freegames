@@ -20,7 +20,7 @@ docker pull docker pull evilurge/epicgames-weekly-freegames:latest
 ```
 And run a docker container from the newly downloaded image:
 ```
-docker run -e EMAIL=<EMAIL> -e PASSWORD=<PASSWORD> ricosorio/epicgames-weekly-freegames
+docker run -e EMAIL=<EMAIL> -e PASSWORD=<PASSWORD> evilurge/epicgames-weekly-freegames
 ```
 Replacing the environment variables `EMAIL` and `PASSWORD` for your epicgames store credentials.
 
@@ -44,7 +44,7 @@ Different options can be provided to alter the output or execution of the progra
 
 Running a docker container with these:
 ```
-docker run -e TIMEOUT=15 -e LOGIN_TIMEOUT=20 -e LOGLEVEL=DEBUG -e SLEEPTIME=43200 -e EMAIL=<EMAIL> -e PASSWORD=<PASSWORD> ricosorio/epicgames-weekly-freegames
+docker run -e TIMEOUT=15 -e LOGIN_TIMEOUT=20 -e LOGLEVEL=DEBUG -e SLEEPTIME=43200 -e EMAIL=<EMAIL> -e PASSWORD=<PASSWORD> evilurge/epicgames-weekly-freegames
 ```
 
 ## Docker Compose
